@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Divina · Fuenlabrada</title>
+<meta name="description" content="Servicios de Divina en Fuenlabrada.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Divina, inicio"><span class="logo-mark">D</span><span class="logo-text"><span class="script">Divina</span><small>salón de belleza</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="facial">Facial</button>
+  <button class="tab-btn" data-tab="corporal">Corporal</button>
+  <button class="tab-btn" data-tab="mirada">Mirada y micropigmentación</button>
+  <button class="tab-btn" data-tab="depilacion">Depilación</button>
+  
+</div>
+
+<div class="tab-panel active" id="facial">
+  <div class="tab-intro"><span class="script">Rostro</span><h2>Tratamientos faciales</h2><p>Firmeza, luminosidad y una piel más uniforme.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('facial')"><img src="bk_05.jpg" alt="Facial" loading="lazy"><div class="cat-card-text"><h3>Facial</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="corporal">
+  <div class="tab-intro"><span class="script">Cuerpo</span><h2>Tratamientos corporales</h2><p>Reduce, tonifica y relaja.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('corporal')"><img src="bk_16.jpg" alt="Corporal" loading="lazy"><div class="cat-card-text"><h3>Corporal</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="mirada">
+  <div class="tab-intro"><span class="script">Mirada</span><h2>Pestañas, cejas y micropigmentación</h2><p>Una mirada perfecta cada día.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('mirada')"><img src="bk_06.jpg" alt="Mirada" loading="lazy"><div class="cat-card-text"><h3>Mirada</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="depilacion">
+  <div class="tab-intro"><span class="script">Suave</span><h2>Depilación con cera y sugaring</h2><p>Piel suave para ellas y para ellos.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('depilacion')"><img src="bk_11.jpg" alt="Depilación" loading="lazy"><div class="cat-card-text"><h3>Depilación</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34640832435" target="_blank" rel="noopener" style="color:var(--red)">640 83 24 35</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-facial"><div class="modal">
+  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
+  <h3>Facial</h3><p class="modal-sub">Tecnología para tu piel</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial y limpieza profunda</div><span class="svc-desc">Piel limpia, luminosa y oxigenada.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Hidrofacial H2-O2</div><span class="svc-desc">Limpieza profunda con hidratación.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Indiba facial y rejuvenecimiento</div><span class="svc-desc">Estimula colágeno y elastina para dar firmeza.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Dermapen</div><span class="svc-desc">Para arrugas, manchas, cicatrices y marcas de acné.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Radiofrecuencia y masaje facial</div><span class="svc-desc">Masaje facial lifting con ventosas y mascarilla.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/133281_salon-divina_cuidado-de-la-piel_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640832435?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20facial" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-corporal"><div class="modal">
+  <button class="modal-close" onclick="closeModal('corporal')" aria-label="Cerrar">×</button>
+  <h3>Corporal</h3><p class="modal-sub">Con Indiba y diatermia</p>
+  <div class="svc-row"><div><div class="svc-name">Masaje reductor con Indiba</div><span class="svc-desc">Bonos de 6 y 10 sesiones.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tratamiento anticelulitis con Indiba</div><span class="svc-desc">Para una piel más lisa.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tonificación con Indiba</div><span class="svc-desc">Brazos, piernas y pecho.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Esculptor y diatermia</div><span class="svc-desc">Quema grasa y modela.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Masaje relajante y descontracturante</div><span class="svc-desc">De pies a cabeza, facial incluido.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/133281_salon-divina_cuidado-de-la-piel_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640832435?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20corporal" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-mirada"><div class="modal">
+  <button class="modal-close" onclick="closeModal('mirada')" aria-label="Cerrar">×</button>
+  <h3>Mirada</h3><p class="modal-sub">Cejas, pestañas y labios</p>
+  <div class="svc-row"><div><div class="svc-name">Extensiones y lifting de pestañas</div><span class="svc-desc">Pestañas largas y con curva.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Laminación de cejas</div><span class="svc-desc">Cejas peinadas y definidas.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Micropigmentación</div><span class="svc-desc">Cejas, labios y eyeliner, con sus retoques.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/133281_salon-divina_cuidado-de-la-piel_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640832435?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20mirada" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-depilacion"><div class="modal">
+  <button class="modal-close" onclick="closeModal('depilacion')" aria-label="Cerrar">×</button>
+  <h3>Depilación</h3><p class="modal-sub">Cera y sugaring</p>
+  <div class="svc-row"><div><div class="svc-name">Piernas y brazos</div><span class="svc-desc">Completas o medias.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Bikini, axilas y rostro</div><span class="svc-desc">Zonas pequeñas con todo el cuidado.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Depilación masculina</div><span class="svc-desc">Espalda y pecho.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://booksy.com/es-es/133281_salon-divina_cuidado-de-la-piel_53724_fuenlabrada" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640832435?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Divina - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34640832435?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20tratamientos%20de%20Divina" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
